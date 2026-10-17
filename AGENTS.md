@@ -1,11 +1,7 @@
-# Agent instructions
+# Cursor / Cloud agent
 
-Read INSTRUCTIONS.md first.
+You are not reading a deploy README. Attach this repo as MCP (`python3 agent.py mcp`) with `PANEL_ROOT` pointing at the private Ghazal panel checkout.
 
-Deploy panel and accounting edits only with:
+Then act with `search_code`, `read_file`, `edit_file`, `deploy_preview`, `deploy_live`. Constitution: `constitution.md`.
 
-```bash
-python3 deploy.py --root /path/to/panel-repo FILE [FILE...]
-```
-
-Do not use FTP, n8n MCP, or OpenSEO MCP. Do not commit config.json or secrets.
+Do not use FTP. Do not invent another uploader.

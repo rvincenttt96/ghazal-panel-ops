@@ -1,10 +1,11 @@
-# Gemini: Ghazal panel edits
+# Gemini 4
 
-Read INSTRUCTIONS.md before changing panel.ghazalify.com or acccounting.ghazalify.com.
+Add this repo as an MCP server so you can actually edit the live Ghazal panels:
 
 ```bash
-python3 deploy.py --root /path/to/panel-repo FILE
-python3 deploy.py --dry-run --root /path/to/panel-repo FILE
+gemini mcp add ghazal-panel python3 /ABS/ghazal-panel-ops/agent.py mcp
 ```
 
-This script talks to DirectAdmin. It is not an MCP. Do not invent another deploy path.
+Set `PANEL_ROOT` to the private panel repository (the one with `dashboard/` and `includes/`). DirectAdmin password stays in `config.json` next to `agent.py`.
+
+Read `constitution.md`. Use tools. Do not explain how you would use FTP. Search, edit, `deploy_preview`, `deploy_live`.
